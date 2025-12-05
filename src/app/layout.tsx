@@ -1,8 +1,10 @@
 import type { Metadata } from 'next';
 // Import des polices Google via Next.js
 import { Outfit } from 'next/font/google';
+
 import './globals.css';
 import TransitionProvider from '@/components/TransitionProvider';
+import { SessionProvider } from '@/context/SessionContext';
 
 // Configuration de la police
 const outfit = Outfit({
@@ -27,7 +29,9 @@ export default function RootLayout({
       {/* On injecte les variables CSS des polices dans le body */}
       <body className={`${outfit.variable} font-sans antialiased`}>
         {/* On enveloppe les enfants (les pages) avec notre transition */}
-        <TransitionProvider>{children}</TransitionProvider>
+        <SessionProvider>
+          <TransitionProvider>{children}</TransitionProvider>
+        </SessionProvider>
       </body>
     </html>
   );

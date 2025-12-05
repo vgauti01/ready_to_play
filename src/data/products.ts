@@ -43,7 +43,7 @@ const INVENTORY: Product[] = [
     image:
       'https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?auto=format&fit=crop&w=500&q=80',
     searchQuery: 'gilet lesté musculation',
-    tags: ['expert', 'push_up', 'burpee', 'pistol', 'pull_up'],
+    tags: ['push_up', 'burpee', 'pistol', 'pull_up'],
   },
   {
     id: 'push_up_bars',
@@ -190,7 +190,7 @@ const INVENTORY: Product[] = [
     image:
       'https://images.unsplash.com/photo-1593095948071-474c5cc2989d?auto=format&fit=crop&w=500&q=80',
     searchQuery: 'whey proteine',
-    tags: ['muscle', 'expert'],
+    tags: ['muscle'],
   },
   {
     id: 'gourde_metal',
@@ -210,7 +210,7 @@ const INVENTORY: Product[] = [
     image:
       'https://images.unsplash.com/photo-1600881333168-2ef49b341f30?auto=format&fit=crop&w=500&q=80',
     searchQuery: 'rouleau massage',
-    tags: ['expert', 'running', 'muscle', 'recuperation'],
+    tags: ['running', 'muscle', 'recuperation'],
   },
 ];
 

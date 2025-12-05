@@ -20,6 +20,9 @@ module.exports = {
           
           // Gris très clair pour les fonds
           light: '#F5F5F5',
+
+          // Jaune vif pour les accents
+          highlight: '#FFEA28',
         }
       },
       fontFamily: {

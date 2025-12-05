@@ -1,6 +1,6 @@
 // movementsData.js
 
-type Movement = {
+export type Movement = {
   id: string; // Identifiant unique
   title: string; // Titre du mouvement
   animationName: string; // Nom de l'animation associée

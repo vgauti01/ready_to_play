@@ -1,17 +1,17 @@
 'use client';
 
-import React, { Suspense } from 'react';
+import { Suspense } from 'react';
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls, Environment, ContactShadows } from '@react-three/drei';
 import { useParams } from 'next/navigation';
 import Link from 'next/link';
 import { LuMoveLeft } from 'react-icons/lu';
 
-import AvatarViewer from '../AvatarViewer';
+import AvatarViewer from '../../../components/AvatarViewer';
 import DecathlonProductCard from '../ProductCard';
-import { getRecommendedProducts } from '../products';
+import { getRecommendedProducts } from '../../../data/products';
 
-import { movementsLibrary } from '@/app/results/data';
+import { movementsLibrary } from '@/data/movements';
 
 const ExerciseDetailPage = () => {
   const { slug } = useParams();
@@ -114,7 +114,7 @@ const ExerciseDetailPage = () => {
           {/* --- DESCRIPTION --- */}
           <div className="prose prose-lg prose-slate">
             <div className="flex items-center gap-2 mb-8">
-              <span className="bg-[#FFEA28] text-slate-900 p-1 rounded-sm">
+              <span className="bg-decathlon-highlight text-slate-900 p-1 rounded-sm">
                 <svg
                   width="20"
                   height="20"

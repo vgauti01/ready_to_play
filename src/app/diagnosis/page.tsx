@@ -6,7 +6,7 @@ import Link from 'next/link';
 import { LuMoveLeft } from 'react-icons/lu';
 import { useRouter } from 'next/navigation';
 
-import { questions } from './data';
+import { questions } from '../../data/questions';
 
 export default function DiagnosisPage() {
   const [currentStep, setCurrentStep] = useState(0); // Étape actuelle du QCM
