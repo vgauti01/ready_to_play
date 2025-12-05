@@ -4,6 +4,8 @@
 
 > Une application de coaching sportif immersive, personnalisée et connectée, propulsée par la visualisation 3D interactive.
 
+**Accéder à la démo en ligne :** [http://5.83.147.213:3000/](http://5.83.147.213:3000/)
+
 ## 📋 À propos
 
 Ce projet est une **Progressive Web App (PWA)** conçue pour offrir des programmes d'entraînement sur mesure. Elle se distingue par l'utilisation de modèles 3D interactifs pour visualiser les mouvements et par un algorithme de recommandation prenant en compte les blessures et le matériel disponible.
