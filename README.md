@@ -59,13 +59,34 @@ public/
     npm install
     ```
 
-3.  **Lancer le serveur de développement :**
+3.  ***Lancer le serveur de développement :***
 
+    Sans Docker :
     ```bash
     npm run dev
     ```
 
-4.  Ouvrir [http://localhost:3000](http://localhost:3000) dans votre navigateur.
+    Avec Docker :
+    ```bash
+    docker build -t decathlon-coach-dev -f Dockerfile.dev .
+    docker run -d -p 3000:3000 decathlon-coach-dev
+    ```
+
+3. **Construire pour la production :**
+
+    Sans Docker :
+    ```bash
+    npm run build
+    npm start
+    ```
+
+    Avec Docker :
+    ```bash
+    docker build -t decathlon-coach-prod .
+    docker run -d -p 3000:3000 decathlon-coach-prod
+    ```
+
+Ouvrir [http://localhost:3000](http://localhost:3000) dans votre navigateur.
   
 ## 🧠 L'Algorithme de Scoring
 
